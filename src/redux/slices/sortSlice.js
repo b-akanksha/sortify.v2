@@ -1,27 +1,27 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   alogirthms: [
-    {id: 'bubbleSort', name: 'Bubble Sort'},
-    {id: 'selectionSort', name: 'Selection Sort'}
+    { id: "bubbleSort", name: "Bubble Sort" },
+    { id: "selectionSort", name: "Selection Sort" },
   ],
-  selected: null
-}
+  selected: null,
+};
 
 export const sortSlice = createSlice({
-  name: 'sort',
+  name: "sort",
   initialState,
   reducers: {
     setAlgorithm: (state, { payload }) => {
       state.selected = payload;
     },
     resetAlgorithm: (state) => {
-        state.selected = null
-    }
+      state.selected = null;
+    },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { setAlgorithm, resetAlgorithm } = sortSlice.actions
+export const { setAlgorithm, resetAlgorithm } = sortSlice.actions;
 
-export default sortSlice.reducer
+export default sortSlice.reducer;

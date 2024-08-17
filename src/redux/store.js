@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import sortSlice from './slices/sortSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import sortSlice from "./slices/sortSlice";
 
 export const store = configureStore({
   reducer: {
-    sort: sortSlice 
+    sort: sortSlice,
   },
-})
+});
