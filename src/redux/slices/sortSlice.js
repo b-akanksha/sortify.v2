@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  alogirthms: [
+  alogrithms: [
     { id: "bubbleSort", name: "Bubble Sort" },
     { id: "selectionSort", name: "Selection Sort" },
   ],
