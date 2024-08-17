@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/selection-sort",
     element: <div>Selection Sort</div>,
   },
-]);
+], { basename: '/sortifyv2'});
 
 function App() {
   return (
