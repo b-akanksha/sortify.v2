@@ -22,14 +22,14 @@ const Home = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      height="100vh"
+      justifyContent="center"
+      height="100%"
     >
       <Box
         sx={{
           display: "flex",
           alignItems: "baseline",
           justifyContent: "center",
-          marginTop: (theme) => theme.spacing(10),
         }}
       >
         <Typography variant="h1">Sortify</Typography>
@@ -40,6 +40,7 @@ const Home = () => {
           display: "flex",
           alignItems: "baseline",
           justifyContent: "center",
+          flexWrap: "wrap",
         }}
       >
         {alogrithms.map((algo, index) => (
@@ -52,6 +53,7 @@ const Home = () => {
               borderColor: "#1db954",
               margin: "8px",
               borderRadius: "16px",
+              width: index ? "auto" : "159.49px",
               "&:hover": {
                 borderColor: "#4ac776",
                 color: "#4ac776",
